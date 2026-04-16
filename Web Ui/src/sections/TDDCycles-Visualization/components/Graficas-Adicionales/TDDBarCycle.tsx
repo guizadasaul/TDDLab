@@ -64,7 +64,7 @@ const TDDBar: React.FC<TDDBarProps> = ({ CommitsCycles }) => {
       "Ultima ejecucion de pruebas rojo",
       "Ejecucion de pruebas de solo verde",
       "Sin información (VSCode TDDLab)"];
-  const colors = ["#A9A9A9", "#ff0000", "#00ff00","#000000"];
+  const colors = ["var(--text-muted)", "var(--color-error)", "var(--color-success)", "var(--text-primary)"];
 
   const data = {
     labels,

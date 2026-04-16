@@ -1,12 +1,12 @@
 import { CSSProperties } from "react";
 
 export const dialogContentStyle: CSSProperties = {
-  fontSize: "15px",
+  fontSize: "var(--fs-sm)",
 };
 
 export const titleStyle: CSSProperties = {
-  fontSize: "1rem",
-  fontWeight: "bold",
+  fontSize: "var(--fs-md)",
+  fontWeight: "var(--fw-bold)",
 };
 
 export const titleStyle2: CSSProperties = {

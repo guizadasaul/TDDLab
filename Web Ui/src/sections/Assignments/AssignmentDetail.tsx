@@ -467,10 +467,10 @@ const AssignmentDetail: React.FC<AssignmentDetailProps> = ({
         <Card variant="elevation" elevation={0}>
           <CardContent>
             <div style={{ marginBottom: "40px" }}>
-              <Typography
+                <Typography
                 variant="h5"
                 component="div"
-                style={{ fontSize: "30px", lineHeight: "3.8" }}
+                style={{ fontSize: "var(--fs-xxl)", lineHeight: "3.8" }}
               >
                 {assignment.title}
               </Typography>
@@ -482,12 +482,12 @@ const AssignmentDetail: React.FC<AssignmentDetailProps> = ({
                 }}
               >
                 <ArchiveOutlinedIcon
-                  style={{ marginRight: "8px", color: "#666666" }}
+                  style={{ marginRight: "8px", color: "var(--text-secondary)" }}
                 />
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  style={{ fontSize: "16px", lineHeight: "1.8" }}
+                  style={{ fontSize: "var(--fs-md)", lineHeight: "1.8" }}
                 >
                   <strong>Grupo:</strong> {groupDetails?.groupName}
                 </Typography>
@@ -500,12 +500,12 @@ const AssignmentDetail: React.FC<AssignmentDetailProps> = ({
                 }}
               >
                 <NotesOutlinedIcon
-                  style={{ marginRight: "8px", color: "#666666" }}
+                  style={{ marginRight: "8px", color: "var(--text-secondary)" }}
                 />
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  style={{ fontSize: "16px", lineHeight: "1.8" }}
+                  style={{ fontSize: "var(--fs-md)", lineHeight: "1.8" }}
                 >
                   <strong>Instrucciones:</strong> {assignment.description}
                 </Typography>
@@ -519,12 +519,12 @@ const AssignmentDetail: React.FC<AssignmentDetailProps> = ({
                 }}
               >
                 <CalendarMonthIcon
-                  style={{ marginRight: "8px", color: "#666666" }}
+                  style={{ marginRight: "8px", color: "var(--text-secondary)" }}
                 />
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  style={{ fontSize: "16px", lineHeight: "1.8" }}
+                  style={{ fontSize: "var(--fs-md)", lineHeight: "1.8" }}
                 >
                   <strong>Inicio:</strong>{" "}
                   {formatDate(assignment.start_date.toString())}
@@ -538,7 +538,7 @@ const AssignmentDetail: React.FC<AssignmentDetailProps> = ({
                 }}
               >
                 <CalendarMonthIcon
-                  style={{ marginRight: "8px", color: "#666666" }}
+                  style={{ marginRight: "8px", color: "var(--text-secondary)" }}
                 />
                 <Typography
                   variant="body2"
@@ -558,12 +558,12 @@ const AssignmentDetail: React.FC<AssignmentDetailProps> = ({
                   }}
                 >
                   <AccessTimeIcon
-                    style={{ marginRight: "8px", color: "#666666" }}
+                    style={{ marginRight: "8px", color: "var(--text-secondary)" }}
                   />
                   <Typography
                     variant="body2"
                     color="text.secondary"
-                    style={{ fontSize: "16px", lineHeight: "1.8" }}
+                    style={{ fontSize: "var(--fs-md)", lineHeight: "1.8" }}
                   >
                     <strong>Estado:</strong>{" "}
                     {getDisplayStatus(studentSubmission?.status)}
@@ -579,7 +579,7 @@ const AssignmentDetail: React.FC<AssignmentDetailProps> = ({
                     marginBottom: "8px",
                   }}
                 >
-                  <LinkIcon style={{ marginRight: "8px", color: "#666666" }} />
+                  <LinkIcon style={{ marginRight: "8px", color: "var(--text-secondary)" }} />
                   <Typography
                     variant="body2"
                     color="text.secondary"
@@ -607,12 +607,12 @@ const AssignmentDetail: React.FC<AssignmentDetailProps> = ({
                     }}
                   >
                     <CommentIcon
-                      style={{ marginRight: "8px", color: "#666666" }}
+                      style={{ marginRight: "8px", color: "var(--text-secondary)" }}
                     />
                     <Typography
                       variant="body2"
                       color="text.secondary"
-                      style={{ fontSize: "16px", lineHeight: "1.8" }}
+                      style={{ fontSize: "var(--fs-md)", lineHeight: "1.8" }}
                     >
                       <strong>Comentario:</strong> {studentSubmission?.repository_link === "" || studentSubmission == null}
                     </Typography>
@@ -620,13 +620,13 @@ const AssignmentDetail: React.FC<AssignmentDetailProps> = ({
                 ) : null)}
             </div>
             {isStudent(role) && (
-              <Button
+                <Button
                 variant="contained"
                 disabled={!!studentSubmission}
                 onClick={handleOpenLinkDialog}
                 style={{
                   textTransform: "none",
-                  fontSize: "15px",
+                  fontSize: "var(--fs-sm)",
                   marginRight: "8px",
                 }}
               >
@@ -635,7 +635,7 @@ const AssignmentDetail: React.FC<AssignmentDetailProps> = ({
             )}
 
             {isStudent(role) && (
-              <Button
+                <Button
                 variant="contained"
                 disabled={studentSubmission?.repository_link === "" || studentSubmission == null}
                 onClick={() => {
@@ -647,7 +647,7 @@ const AssignmentDetail: React.FC<AssignmentDetailProps> = ({
                 color="primary"
                 style={{
                   textTransform: "none",
-                  fontSize: "15px",
+                  fontSize: "var(--fs-sm)",
                   marginRight: "8px",
                 }}
               >
@@ -667,7 +667,7 @@ const AssignmentDetail: React.FC<AssignmentDetailProps> = ({
                 onClick={handleOpenCommentDialog}
                 style={{
                   textTransform: "none",
-                  fontSize: "15px",
+                  fontSize: "var(--fs-sm)",
                   marginRight: "8px",
                 }}
               >
@@ -717,11 +717,11 @@ const AssignmentDetail: React.FC<AssignmentDetailProps> = ({
       {!isStudent(role) && (
         <Card variant="elevation" elevation={0}>
           <CardContent>
-            <Typography
+                <Typography
               variant="h6"
               component="div"
               align="center"
-              style={{ fontSize: "24px", lineHeight: "3.8" }}
+              style={{ fontSize: "var(--fs-xl)", lineHeight: "3.8" }}
             >
               Lista de Estudiantes
             </Typography>

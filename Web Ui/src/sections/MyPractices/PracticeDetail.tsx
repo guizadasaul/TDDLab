@@ -246,7 +246,7 @@ const PracticeDetail: React.FC<PracticeDetailProps> = ({ userid }) => {
               <Typography
                 variant="h5"
                 component="div"
-                style={{ fontSize: "30px", lineHeight: "3.8" }}
+                style={{ fontSize: "var(--fs-xxl)", lineHeight: "3.8" }}
               >
                 {practice.title}
               </Typography>
@@ -259,12 +259,12 @@ const PracticeDetail: React.FC<PracticeDetailProps> = ({ userid }) => {
                 }}
               >
                 <AccessTimeIcon
-                  style={{ marginRight: "8px", color: "#666666" }}
+                  style={{ marginRight: "8px", color: "var(--text-secondary)" }}
                 />
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  style={{ fontSize: "16px", lineHeight: "1.8" }}
+                  style={{ fontSize: "var(--fs-md)", lineHeight: "1.8" }}
                 >
                   <strong>Fecha de Creación:</strong>{" "}
                   {formatDate(datePrac?.toString() ?? "")}
@@ -278,11 +278,11 @@ const PracticeDetail: React.FC<PracticeDetailProps> = ({ userid }) => {
                   marginBottom: "8px",
                 }}
               >
-                <LinkIcon style={{ marginRight: "8px", color: "#666666" }} />
+                <LinkIcon style={{ marginRight: "8px", color: "var(--text-secondary)" }} />
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  style={{ fontSize: "16px", lineHeight: "1.8" }}
+                  style={{ fontSize: "var(--fs-md)", lineHeight: "1.8" }}
                 >
                   <strong>Enlace:</strong>
                   <a
@@ -303,7 +303,7 @@ const PracticeDetail: React.FC<PracticeDetailProps> = ({ userid }) => {
               onClick={handleOpenLinkDialog}
               style={{
                 textTransform: "none",
-                fontSize: "15px",
+                fontSize: "var(--fs-sm)",
                 marginRight: "8px",
               }}
             >
@@ -326,7 +326,7 @@ const PracticeDetail: React.FC<PracticeDetailProps> = ({ userid }) => {
               disabled={!practiceSubmissions[0]?.repository_link}
               style={{
                 textTransform: "none",
-                fontSize: "15px",
+                fontSize: "var(--fs-sm)",
                 marginRight: "8px",
               }}
             >
@@ -346,7 +346,7 @@ const PracticeDetail: React.FC<PracticeDetailProps> = ({ userid }) => {
               onClick={handleOpenCommentDialog}
               style={{
                 textTransform: "none",
-                fontSize: "15px",
+                fontSize: "var(--fs-sm)",
                 marginRight: "8px",
               }}
             >

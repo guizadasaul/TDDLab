@@ -60,7 +60,7 @@ const ProfileOptions = ({
                     backgroundColor: "#ffffff",
                     boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
                     borderWidth: 4,
-                    borderColor: "#000000"
+                    borderColor: "var(--text-primary)"
                 },
             }}
         >
@@ -94,7 +94,7 @@ const ProfileOptions = ({
                             textTransform: "none",
                             px: 3,
                             color: "blue",
-                            borderColor: "blue",
+                                borderColor: "var(--color-primary-600)",
                             marginBottom: 2
                         }}
                         onClick={handleProfileSettingsNavigation}
@@ -109,7 +109,7 @@ const ProfileOptions = ({
                             textTransform: "none",
                             px: 3,
                             borderColor: "#f20d0d",
-                            color:"red"
+                                color: "var(--color-error)"
                         }}
                         onClick={handleLogout}
                     >

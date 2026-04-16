@@ -2,29 +2,29 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: var(--fs-md);
+  font-weight: var(--fw-regular);
   padding-top: 16px;
   padding-bottom: 16px;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: var(--font-family-base);
 }
 
 .assignment-form-validation-title--error {
-  color: #d32f2f;
+  color: var(--color-error);
 }
 
 .assignment-form-validation-title--success {
-  color: #2e7d32;
+  color: var(--color-success);
 }
 
 .assignment-form-validation-icon--error {
-  color: #d32f2f;
-  font-size: 22px !important;
+  color: var(--color-error);
+  font-size: var(--fs-xl) !important;
 }
 
 .assignment-form-validation-icon--success {
-  color: #2e7d32;
-  font-size: 22px !important;
+  color: var(--color-success);
+  font-size: var(--fs-xl) !important;
 }
 
 .assignment-form-validation-actions {
@@ -33,18 +33,18 @@
 }
 
 .assignment-form-validation-close--error {
-  color: #d32f2f;
+  color: var(--color-error);
   text-transform: none;
-  font-size: 0.875rem;
+  font-size: var(--fs-sm);
 }
 
 .assignment-form-validation-close--success {
-  color: #2e7d32;
+  color: var(--color-success);
   text-transform: none;
-  font-size: 0.875rem;
+  font-size: var(--fs-sm);
 }
 
 .assignment-form-cancel-button {
-  color: #555;
+  color: var(--text-secondary);
   text-transform: none;
 }

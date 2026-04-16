@@ -8,13 +8,13 @@
 }
 
 .edit-assignment-error-title {
-  color: #dc3545;
+  color: var(--color-error);
   font-weight: bold;
   font-size: 18px;
 }
 
 .edit-assignment-error-message {
-  color: #dc3545;
+  color: var(--color-error);
   font-weight: bold;
   font-size: 16px;
   text-align: center;

@@ -89,10 +89,10 @@ const CommitTimelineDialog: React.FC<CommitTimelineDialogProps> = ({
                       label: "Ejecuciones de Tests",
                       data: timelineData,
                       backgroundColor: timelineData.map((item) =>
-                        item.isPassed ? "#28A745" : "#D73A49"
+                        item.isPassed ? "var(--color-success)" : "var(--color-danger-strong)"
                       ),
                       borderColor: timelineData.map((item) =>
-                        item.isPassed ? "#28A745" : "#D73A49"
+                        item.isPassed ? "var(--color-success)" : "var(--color-danger-strong)"
                       ),
                       borderWidth: 2,
                     },

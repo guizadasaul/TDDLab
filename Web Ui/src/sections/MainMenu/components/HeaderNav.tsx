@@ -63,19 +63,19 @@ const HeaderNav = ({ userName, avatarUrl, currentDate }: HeaderNavProps) => {
                     handleOpenProfile(event)
                 }}>
                     <Avatar src={avatarUrl} alt={userName} sx={{ width: 36, height: 36 }} />
-                </IconButton>
-
+                                backgroundColor: "var(--color-surface)",
+                                borderBottom: "2px solid var(--text-primary)", 
                 <ProfileOptions
                     anchorEl={anchorEl}
                     open={Boolean(anchorEl)}
-                    onClose={handleCloseProfile}
+                                <CalendarTodayIcon sx={{ color: "var(--color-primary-variant)" }} aria-hidden />
                     userName={userName}
                     email={userName}
                     avatarUrl={avatarUrl}
                 />
             </Box>
 
-        </Box>
+                                <NotificationsNoneIcon sx={{ color: "var(--text-muted)" }} aria-hidden />
     );
 };
 

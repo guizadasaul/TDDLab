@@ -59,9 +59,9 @@ export default function LoginComponent() {
             onClick={handleLogout}
             sx={{
               borderRadius: 2,
-              color: "#1a1a2e",
-              "&:hover": { backgroundColor: "#f0f4ff" },
-              "& .MuiListItemIcon-root": { color: "#1a1a2e", minWidth: 40 },
+              color: "var(--text-primary)",
+              "&:hover": { backgroundColor: "var(--color-surface-2)" },
+              "& .MuiListItemIcon-root": { color: "var(--text-primary)", minWidth: 40 },
             }}
           >
             <ListItemIcon><LogoutIcon /></ListItemIcon>

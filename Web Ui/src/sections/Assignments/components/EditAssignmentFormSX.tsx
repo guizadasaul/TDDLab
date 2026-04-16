@@ -1,11 +1,11 @@
 export const t = {
   class1: {
-              "& label.Mui-focused": {
-                color: "#001F3F",
+                "& label.Mui-focused": {
+                color: "var(--navy-dark)",
               },
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
-                  borderColor: "#001F3F",
+                  borderColor: "var(--navy-dark)",
                 },
               },
             },

@@ -1,0 +1,36 @@
+/* Global typography variables and base styles */
+:root {
+  /* Font families */
+  --font-family-base: 'Roboto, Helvetica, Arial, sans-serif';
+  --font-family-mono: 'SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace';
+
+  /* Font sizes */
+  --fs-xxl: 30px; /* headings large */
+  --fs-xl: 24px;  /* headings */
+  --fs-lg: 18px;  /* subhead */
+  --fs-md: 16px;  /* body */
+  --fs-sm: 15px;  /* small body / buttons */
+  --fs-xs: 13px;  /* captions */
+
+  /* Font weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi: 600;
+  --fw-bold: 700;
+}
+
+/* Base rules — components can override */
+:root {
+  --font-family-base: 'Roboto', sans-serif;
+  --font-family-mono: 'Roboto Mono', monospace;
+  --fs-xxl: 2rem;
+  --fs-xl: 1.5rem;
+  --fs-lg: 1.25rem;
+  --fs-md: 1rem;
+  --fs-sm: 0.9rem;
+  --fs-xs: 0.8rem;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi: 600;
+  --fw-bold: 700;
+}

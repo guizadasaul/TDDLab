@@ -131,7 +131,7 @@ const CreateGroupPopup: React.FC<CreateGroupPopupProps> = ({
             />
           </DialogContent>
           <DialogActions>
-            <Button onClick={handleCancel} style={{ color: "#555", textTransform: "none" }}>
+            <Button onClick={handleCancel} style={{ color: "var(--text-secondary)", textTransform: "none" }}>
               Cancelar
             </Button>
             <Button onClick={handleCreate} color="primary" style={{ textTransform: "none" }}>

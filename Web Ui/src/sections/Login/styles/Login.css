@@ -5,13 +5,13 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-family-base);
 }
 
 /* Estilos para el encabezado */
 .app-header {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--muted-333);
+  color: var(--white);
   padding: 20px;
   width: 100%;
   text-align: center;
@@ -36,9 +36,9 @@
 /* Estilos para el botón de GitHub */
 .github-button {
   padding: 10px 20px;
-  font-size: 16px;
-  background-color: #18fca4;
-  color: black;
+  font-size: var(--fs-md);
+  background-color: var(--color-success);
+  color: var(--text-primary);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -46,21 +46,21 @@
   margin-top: 20px;
 }
 .login-Title {
-  font-size: 25px;
-  font-weight: 600;
-  color: black;
+  font-size: var(--fs-xxl);
+  font-weight: var(--fw-semi);
+  color: var(--text-primary);
 }
 .github-button:hover {
-  background-color: #555;
-  color: white;
+  background-color: var(--muted-555);
+  color: var(--white);
 }
 
 /* Estilos para el botón de Google */
 .google-button {
   padding: 10px 20px;
-  font-size: 16px;
-  background-color: #4285f4;
-  color: white;
+  font-size: var(--fs-md);
+  background-color: var(--color-primary-600);
+  color: var(--white);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -68,5 +68,5 @@
 }
 
 .google-button:hover {
-  background-color: #3367d6;
+  background-color: var(--color-primary-variant);
 }

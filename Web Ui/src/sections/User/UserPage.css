@@ -6,7 +6,7 @@
   border-bottom: 1px solid var(--users-table-border);
   border-right: 1px solid var(--users-table-border);
   color: var(--users-table-cell-text);
-  font-size: 1.02rem;
+  font-size: var(--fs-md);
   line-height: 1.25;
   padding: 16px 16px;
   vertical-align: middle;
@@ -18,8 +18,8 @@
 
 .users-table-header {
   color: var(--users-table-header-text) !important;
-  font-size: 1.18rem !important;
-  font-weight: 650 !important;
+  font-size: var(--fs-lg) !important;
+  font-weight: var(--fw-semi) !important;
   line-height: 1.15 !important;
   padding-top: 14px !important;
   padding-bottom: 14px !important;
@@ -55,12 +55,12 @@
 .users-remove-icon {
   color: var(--users-table-remove);
   cursor: pointer;
-  font-size: 2.2rem !important;
+  font-size: calc(var(--fs-xxl) * 1.1) !important;
 }
 
 .users-table-empty {
   color: var(--users-table-empty-text) !important;
-  font-weight: 500;
+  font-weight: var(--fw-medium);
   padding-top: 20px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -72,30 +72,30 @@
   }
 
   .users-table .MuiTableCell-root {
-    font-size: 0.96rem;
+    font-size: var(--fs-md);
     padding: 12px 10px;
   }
 
   .users-table-header {
-    font-size: 1.08rem !important;
+    font-size: var(--fs-lg) !important;
   }
 
   .users-remove-icon {
-    font-size: 2rem !important;
+    font-size: var(--fs-xxl) !important;
   }
 }
 
 @media (max-width: 600px) {
   .users-table .MuiTableCell-root {
-    font-size: 0.89rem;
+    font-size: var(--fs-sm);
     padding: 10px 8px;
   }
 
   .users-table-header {
-    font-size: 0.99rem !important;
+    font-size: var(--fs-md) !important;
   }
 
   .users-remove-icon {
-    font-size: 1.7rem !important;
+    font-size: var(--fs-xl) !important;
   }
 }

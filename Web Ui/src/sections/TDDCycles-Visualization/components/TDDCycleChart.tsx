@@ -80,7 +80,7 @@ const TDDCycleChart: React.FC<TDDCycleChartProps> = ({ data = [] }) => {
             y1={topPadding + (plotHeight / 7) * i}
             x2={leftPadding + plotWidth}
             y2={topPadding + (plotHeight / 7) * i}
-            stroke="#e0e0e0"
+            stroke="var(--color-border)"
             strokeWidth="1"
           />
         ))}
@@ -91,7 +91,7 @@ const TDDCycleChart: React.FC<TDDCycleChartProps> = ({ data = [] }) => {
           y1={topPadding}
           x2={leftPadding}
           y2={topPadding + plotHeight}
-          stroke="#333"
+          stroke="var(--text-primary)"
           strokeWidth="2"
         />
 
@@ -101,7 +101,7 @@ const TDDCycleChart: React.FC<TDDCycleChartProps> = ({ data = [] }) => {
           y1={topPadding + plotHeight}
           x2={leftPadding + plotWidth}
           y2={topPadding + plotHeight}
-          stroke="#333"
+          stroke="var(--text-primary)"
           strokeWidth="2"
         />
 
@@ -109,7 +109,7 @@ const TDDCycleChart: React.FC<TDDCycleChartProps> = ({ data = [] }) => {
         <text
           x={20}
           y={topPadding + plotHeight / 2}
-          fill="#666"
+          fill="var(--text-secondary)"
           fontSize="14"
           textAnchor="middle"
           transform={`rotate(-90, 20, ${topPadding + plotHeight / 2})`}
@@ -146,7 +146,7 @@ const TDDCycleChart: React.FC<TDDCycleChartProps> = ({ data = [] }) => {
                     cx={x}
                     cy={y}
                     r={circleRadius}
-                    fill={test.passed ? '#2d8a2d' : '#c72828'}
+                    fill={test.passed ? 'var(--color-success)' : 'var(--color-danger-strong)'}
                     opacity="0.9"
                   />
                 );
@@ -161,7 +161,7 @@ const TDDCycleChart: React.FC<TDDCycleChartProps> = ({ data = [] }) => {
             key={`x-label-${index}`}
             x={leftPadding + (index + 1) * commitSpacing}
             y={topPadding + plotHeight + 25}
-            fill="#666"
+            fill="var(--text-secondary)"
             fontSize="12"
             textAnchor="middle"
             transform={`rotate(-45, ${leftPadding + (index + 1) * commitSpacing}, ${topPadding + plotHeight + 25})`}
@@ -174,7 +174,7 @@ const TDDCycleChart: React.FC<TDDCycleChartProps> = ({ data = [] }) => {
         <text
           x={leftPadding + plotWidth / 2}
           y={chartHeight - 15}
-          fill="#666"
+          fill="var(--text-secondary)"
           fontSize="14"
           textAnchor="middle"
         >
@@ -210,7 +210,7 @@ const TDDCycleChart: React.FC<TDDCycleChartProps> = ({ data = [] }) => {
 const styles: Record<string, React.CSSProperties> = {
   container: {
     padding: '20px',
-    backgroundColor: '#ffffff',
+    backgroundColor: 'var(--color-surface)',
     borderRadius: '8px',
     maxWidth: '1300px',
     margin: '20px auto',
@@ -219,9 +219,9 @@ const styles: Record<string, React.CSSProperties> = {
     marginBottom: '20px',
   },
   title: {
-    fontSize: '24px',
-    fontWeight: 'bold',
-    color: '#333',
+    fontSize: 'var(--fs-xl)',
+    fontWeight: 'var(--fw-bold)',
+    color: 'var(--text-primary)',
     margin: '0 0 10px 0',
   },
   svg: {
@@ -234,7 +234,7 @@ const styles: Record<string, React.CSSProperties> = {
     gap: '30px',
     marginTop: '20px',
     padding: '15px',
-    backgroundColor: '#f9f9f9',
+    backgroundColor: 'var(--color-surface-2)',
     borderRadius: '6px',
   },
   legendItem: {
@@ -248,19 +248,19 @@ const styles: Record<string, React.CSSProperties> = {
     borderRadius: '50%',
   },
   legendText: {
-    fontSize: '14px',
-    color: '#666',
+    fontSize: 'var(--fs-sm)',
+    color: 'var(--text-secondary)',
   },
   summary: {
     display: 'flex',
     justifyContent: 'space-around',
     marginTop: '20px',
     padding: '15px',
-    backgroundColor: '#f5f5f5',
+    backgroundColor: 'var(--color-surface-soft)',
     borderRadius: '6px',
   },
   summaryItem: {
-    fontSize: '14px',
+    fontSize: 'var(--fs-sm)',
     color: '#666',
   },
 };

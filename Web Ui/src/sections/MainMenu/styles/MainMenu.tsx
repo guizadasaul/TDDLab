@@ -3,17 +3,17 @@ const MainMenuSX = {
     dNoneSmBlock: { display: { xs: "none", sm: "block" } },
     iconButton: { display: { xs: "flex", sm: "none" } },
     button: (activeButton: boolean | undefined) => ({
-      borderBottom: activeButton ? "2px solid #fff" : "none",
-      color: activeButton ? "#fff" : "#A9A9A9",
+      borderBottom: activeButton ? "2px solid var(--color-surface)" : "none",
+      color: activeButton ? "var(--color-surface)" : "var(--text-muted)",
     }),
 
     sidebar: {
       width: 220,
       height: "100vh",
-      backgroundColor: "#fff",
+      backgroundColor: "var(--color-surface)",
       display: "flex",
       flexDirection: "column",
-      boxShadow: "2px 0 8px rgba(0,0,0,0.10)",
+      boxShadow: "2px 0 8px var(--transparent-18)",
       position: "fixed",
       left: 0,
       top: 0,
@@ -39,10 +39,10 @@ const MainMenuSX = {
       width: "100%",
     },
     logoTddLetter: {
-      color: "#000000",
+      color: "var(--text-primary)",
     },
     logoLabLetter: {
-      color: "#1565c0",
+      color: "var(--color-primary-600)",
     },
     navList: {
       flexGrow: 1,
@@ -53,13 +53,13 @@ const MainMenuSX = {
     },
     navListItemButton: (isActive: boolean) => ({
       borderRadius: 2,
-      color: isActive ? "#1565c0" : "#1a1a2e",
-      backgroundColor: isActive ? "#e8f0fe" : "transparent",
+      color: isActive ? "var(--color-primary-600)" : "var(--text-primary)",
+      backgroundColor: isActive ? "var(--color-surface-2)" : "transparent",
       "&:hover": {
-        backgroundColor: "#f0f4ff",
+        backgroundColor: "var(--color-surface-2)",
       },
       "& .MuiListItemIcon-root": {
-        color: isActive ? "#1565c0" : "#1a1a2e",
+        color: isActive ? "var(--color-primary-600)" : "var(--text-primary)",
         minWidth: 40,
       },
     }),

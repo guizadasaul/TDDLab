@@ -40,7 +40,7 @@ const AIResultSection = ({
       color="primary"
       style={{
         textTransform: 'none',
-        fontSize: '15px',
+        fontSize: 'var(--fs-sm)',
       }}
       onClick={onAction}
       disabled={loading}

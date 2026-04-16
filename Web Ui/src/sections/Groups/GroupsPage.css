@@ -9,9 +9,9 @@
 }
 
 .groups-header-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #222;
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semi);
+  color: var(--text-primary);
   margin: 0;
 }
 
@@ -25,23 +25,23 @@
 .groups-filter-btn {
   border-radius: 20px !important;
   text-transform: none !important;
-  font-size: 0.9rem !important;
-  color: #333 !important;
-  border-color: #bbb !important;
+  font-size: var(--fs-sm) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--gray-ccc) !important;
   padding: 6px 18px !important;
 }
 
 .groups-create-btn {
   border-radius: 20px !important;
   text-transform: none !important;
-  font-size: 0.9rem !important;
+  font-size: var(--fs-sm) !important;
   padding: 6px 20px !important;
 }
 
 /* ── Divider ────────────────────────────────────────── */
 .groups-divider {
   border: none;
-  border-bottom: 2px solid #e0e0e0;
+  border-bottom: 2px solid var(--color-border);
   margin: 0 24px;
 }
 
@@ -71,27 +71,27 @@
   flex: 1;
   min-width: 0;
   justify-content: space-between;
-  border: 2px solid #e0e0e0;
+  border: 2px solid var(--color-border);
   border-radius: 12px;
   padding: 20px 24px;
   cursor: pointer;
   transition: background-color 0.15s ease, border-color 0.15s ease;
-  background-color: #fff;
+  background-color: var(--color-surface);
 }
 
 .groups-card:hover {
-  background-color: #f0f4ff;
+  background-color: var(--color-surface-2);
 }
 
 .groups-card--selected {
-  background-color: #e8edfb;
-  border-color: #b0bde8;
+  background-color: var(--color-surface-2);
+  border-color: var(--color-primary-variant);
 }
 
 .groups-card-name {
-  font-size: 1.05rem;
-  font-weight: 500;
-  color: #333;
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  color: var(--text-primary);
   flex: 1;
   min-width: 0;
   overflow: hidden;
@@ -118,25 +118,25 @@
 .groups-card-detail {
   margin: -12px 24px 0;
   padding: 16px 24px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--color-border);
   border-top: none;
   border-radius: 0 0 12px 12px;
-  background-color: #fafafa;
-  font-size: 0.95rem;
-  color: #555;
+  background-color: var(--color-surface-2);
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
 }
 
 /* ── Edit dialog ───────────────────────────────────── */
 .groups-edit-title {
-  font-size: 0.8rem;
+  font-size: var(--fs-xs);
 }
 
 .groups-edit-label {
-  font-size: 0.95rem;
+  font-size: var(--fs-sm);
 }
 
 .groups-edit-cancel-btn {
-  color: #555 !important;
+  color: var(--text-secondary) !important;
   text-transform: none !important;
 }
 
@@ -151,7 +151,7 @@
   }
 
   .groups-header-title {
-    font-size: 1.2rem;
+    font-size: var(--fs-lg);
   }
 
   .groups-divider {
@@ -207,7 +207,7 @@
 
   .groups-filter-btn,
   .groups-create-btn {
-    font-size: 0.82rem !important;
+    font-size: var(--fs-xs) !important;
     padding: 5px 14px !important;
   }
 

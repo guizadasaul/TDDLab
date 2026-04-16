@@ -1,0 +1,48 @@
+/* Global color variables — cambia valores aquí para afectar toda la UI */
+:root {
+  /* Brand / primary */
+  --color-primary: #1565c0;
+  --color-primary-variant: #1976d2;
+
+  /* Secondary / accent */
+  --color-accent: #ffa100;
+  --color-accent-variant: #ffb84d;
+
+  /* Surface / backgrounds */
+  --color-background: #ECEFF1;
+  --color-surface: #ffffff;
+  --color-surface-2: #f9f9f9;
+  --color-surface-soft: #f0f6fa;
+
+  /* Borders / dividers */
+  --color-border: #e0e0e0;
+  --color-border-2: #d3d9df;
+
+  /* Text */
+  --text-primary: rgba(0,0,0,0.87);
+  --text-secondary: #666666;
+  --text-muted: #757575;
+
+  /* Status */
+  --color-success: #28a745;
+  --color-error: #d32f2f;
+  --color-warning: #ffa000;
+  --color-info: #039be5;
+
+  /* Utility */
+  --transparent-12: rgba(0,0,0,0.12);
+  --transparent-18: rgba(0,0,0,0.18);
+  --navy-dark: #001F3F;
+  --color-primary-dark: #052845;
+  --color-primary-600: #1565c0;
+  --color-primary-variant: #1976d2;
+  --color-accent-variant: #ffb84d;
+  --color-danger-strong: #c72828;
+  --color-error-surface: #ffebee;
+  --muted-666: #666666;
+  --muted-555: #555555;
+  --muted-757: #757575;
+  --muted-333: #333333;
+  --white: #ffffff;
+  --gray-ccc: #cccccc;
+}

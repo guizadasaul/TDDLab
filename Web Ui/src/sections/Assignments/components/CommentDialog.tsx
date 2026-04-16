@@ -52,12 +52,11 @@ export const CommentDialog: React.FC<CommentDialogProps> = ({
 
   useEffect(() => {
     if (repo || !isLinkLoading) {
-      setIsLoading(false);
-    }
+    fontSize: "var(--fs-lg)",
+    fontWeight: "var(--fw-bold)",
   }, [repo, isLinkLoading]);
 
   const handleCancel = () => {
-    if (originalLink) {
       handleLinkChange({ target: { value: originalLink } } as React.ChangeEvent<HTMLInputElement>);
       setInputLink(originalLink);
     }
@@ -163,7 +162,7 @@ export const CommentDialog: React.FC<CommentDialogProps> = ({
         <Button
           onClick={handleCancel}
           color="primary"
-          style={{ textTransform: "none", color: "#555" }}
+          style={{ textTransform: "none", color: "var(--text-secondary)" }}
         >
           Cancelar
         </Button>

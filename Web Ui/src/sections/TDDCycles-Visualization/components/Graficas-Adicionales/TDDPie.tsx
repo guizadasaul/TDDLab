@@ -64,7 +64,7 @@ const TDDPie: React.FC<TDDPieProps> = ({ commits }) => {
     "Sin Presentación (Negro)",
   ];
 
-  const allColors = ["#00ff00", "#ff0000", "#0000ff", "#000000"];
+  const allColors = ["var(--color-success)", "var(--color-error)", "var(--color-primary-600)", "var(--text-primary)"];
 
   // Filter out categories with zero values
   const filteredIndices = rawData.map((value, index) => ({ value, index }))
@@ -124,7 +124,8 @@ const TDDPie: React.FC<TDDPieProps> = ({ commits }) => {
         meta.data.forEach((arc: any, index: number) => {
           const percentage = dataset.data[index].toFixed(2) + "%";
           const { x, y } = arc.tooltipPosition();
-          ctx.fillStyle = "white";
+          const cssWhite = getComputedStyle(document.documentElement).getPropertyValue('--white') || '#ffffff';
+          ctx.fillStyle = cssWhite.trim();
           ctx.font = "bold 16px Arial";
           ctx.textAlign = "center";
           ctx.textBaseline = "middle";
